@@ -5,14 +5,6 @@ ActiveAdmin.register Restaurant do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  # permit_params :name, :description, :user_id
-  #
-  # or
-  #
-  # permit_params do
-  #   permitted = [:name, :description, :user_id]
-  #   permitted << :other if params[:action] == 'create' && current_user.admin?
-  #   permitted
-  # end
+  permit_params :name, :description, :user_id
   
 end

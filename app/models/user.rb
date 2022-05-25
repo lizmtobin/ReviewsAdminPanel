@@ -6,4 +6,11 @@ class User < ApplicationRecord
 
   has_many :restaurants
   has_many :reviews
+
+  #for active admin
+
+  def name
+    "#{id} - #{email}"
+  end
+
 end
