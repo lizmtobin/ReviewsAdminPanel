@@ -5,14 +5,6 @@ ActiveAdmin.register Review do
   #
   # Uncomment all parameters which should be permitted for assignment
   #
-  # permit_params :content, :restaurant_id, :user_id
-  #
-  # or
-  #
-  # permit_params do
-  #   permitted = [:content, :restaurant_id, :user_id]
-  #   permitted << :other if params[:action] == 'create' && current_user.admin?
-  #   permitted
-  # end
+  permit_params :content, :restaurant_id, :user_id
   
 end
